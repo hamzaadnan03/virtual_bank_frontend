@@ -9,7 +9,7 @@ const Navbar = () => {
     }
   };
   return (
-    <div>
+    <div className="absolute top-2  right-2">
       <button onClick={onLogouthanlder}>Logout</button>
     </div>
   );

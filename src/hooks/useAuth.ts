@@ -31,6 +31,8 @@ export const useAuth = () => {
       const res = await signup(name, email, password);
       if (res.status === 201 && res.data) {
         localStorage.setItem("token", res.data?.accessToken);
+      } else {
+        setError(res.data?.message);
       }
 
       setError("");

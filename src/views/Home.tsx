@@ -6,12 +6,15 @@ import WithdrawMoney from "../components/WithdrawMoney";
 
 const Home: React.FC = () => {
   return (
-    <div>
+    <div className="w-screen">
       <Navbar />
-      <CheckBalance />
-      <DepositMoney />
-      <WithdrawMoney />
-      <TransactionHistory />
+
+      <div className="flex flex-col items-center justify-center">
+        <CheckBalance />
+        <DepositMoney />
+        <WithdrawMoney />
+        <TransactionHistory />
+      </div>
     </div>
   );
 };
